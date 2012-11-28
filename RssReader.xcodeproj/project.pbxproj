@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DBBEF1016660B5D003679DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBBEF0F16660B5D003679DF /* UIKit.framework */; };
+		1DBBEF1216660B5D003679DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBBEF1116660B5D003679DF /* Foundation.framework */; };
+		1DBBEF1416660B5D003679DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBBEF1316660B5D003679DF /* CoreGraphics.framework */; };
+		1DBBEF1616660B5D003679DF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBBEF1516660B5D003679DF /* CoreData.framework */; };
+		1DBBEF1C16660B5D003679DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF1A16660B5D003679DF /* InfoPlist.strings */; };
+		1DBBEF1E16660B5D003679DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF1D16660B5D003679DF /* main.m */; };
+		1DBBEF2216660B5D003679DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2116660B5D003679DF /* AppDelegate.m */; };
+		1DBBEF2416660B5D003679DF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2316660B5D003679DF /* Default.png */; };
+		1DBBEF2616660B5D003679DF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2516660B5D003679DF /* Default@2x.png */; };
+		1DBBEF2816660B5D003679DF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2716660B5D003679DF /* Default-568h@2x.png */; };
+		1DBBEF2B16660B5D003679DF /* RssReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2916660B5D003679DF /* RssReader.xcdatamodeld */; };
+		1DBBEF2E16660B5D003679DF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2D16660B5D003679DF /* MasterViewController.m */; };
+		1DBBEF3116660B5D003679DF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3016660B5D003679DF /* DetailViewController.m */; };
+		1DBBEF3416660B5D003679DF /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3216660B5D003679DF /* MasterViewController_iPhone.xib */; };
+		1DBBEF3716660B5D003679DF /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3516660B5D003679DF /* MasterViewController_iPad.xib */; };
+		1DBBEF3A16660B5D003679DF /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3816660B5D003679DF /* DetailViewController_iPhone.xib */; };
+		1DBBEF3D16660B5D003679DF /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3B16660B5D003679DF /* DetailViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DBBEF0B16660B5D003679DF /* RssReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBBEF0F16660B5D003679DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DBBEF1116660B5D003679DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DBBEF1316660B5D003679DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1DBBEF1516660B5D003679DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1DBBEF1916660B5D003679DF /* RssReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RssReader-Info.plist"; sourceTree = "<group>"; };
+		1DBBEF1B16660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1DBBEF1D16660B5D003679DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DBBEF1F16660B5D003679DF /* RssReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RssReader-Prefix.pch"; sourceTree = "<group>"; };
+		1DBBEF2016660B5D003679DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DBBEF2116660B5D003679DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DBBEF2316660B5D003679DF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1DBBEF2516660B5D003679DF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1DBBEF2716660B5D003679DF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1DBBEF2A16660B5D003679DF /* RssReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RssReader.xcdatamodel; sourceTree = "<group>"; };
+		1DBBEF2C16660B5D003679DF /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1DBBEF2D16660B5D003679DF /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1DBBEF2F16660B5D003679DF /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1DBBEF3016660B5D003679DF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1DBBEF3316660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		1DBBEF3616660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
+		1DBBEF3916660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		1DBBEF3C16660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DBBEF0816660B5D003679DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBBEF1016660B5D003679DF /* UIKit.framework in Frameworks */,
+				1DBBEF1216660B5D003679DF /* Foundation.framework in Frameworks */,
+				1DBBEF1416660B5D003679DF /* CoreGraphics.framework in Frameworks */,
+				1DBBEF1616660B5D003679DF /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DBBEF0016660B5D003679DF = {
+			isa = PBXGroup;
+			children = (
+				1DBBEF1716660B5D003679DF /* RssReader */,
+				1DBBEF0E16660B5D003679DF /* Frameworks */,
+				1DBBEF0C16660B5D003679DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DBBEF0C16660B5D003679DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEF0B16660B5D003679DF /* RssReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DBBEF0E16660B5D003679DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEF0F16660B5D003679DF /* UIKit.framework */,
+				1DBBEF1116660B5D003679DF /* Foundation.framework */,
+				1DBBEF1316660B5D003679DF /* CoreGraphics.framework */,
+				1DBBEF1516660B5D003679DF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DBBEF1716660B5D003679DF /* RssReader */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEF2016660B5D003679DF /* AppDelegate.h */,
+				1DBBEF2116660B5D003679DF /* AppDelegate.m */,
+				1DBBEF2C16660B5D003679DF /* MasterViewController.h */,
+				1DBBEF2D16660B5D003679DF /* MasterViewController.m */,
+				1DBBEF2F16660B5D003679DF /* DetailViewController.h */,
+				1DBBEF3016660B5D003679DF /* DetailViewController.m */,
+				1DBBEF3216660B5D003679DF /* MasterViewController_iPhone.xib */,
+				1DBBEF3516660B5D003679DF /* MasterViewController_iPad.xib */,
+				1DBBEF3816660B5D003679DF /* DetailViewController_iPhone.xib */,
+				1DBBEF3B16660B5D003679DF /* DetailViewController_iPad.xib */,
+				1DBBEF2916660B5D003679DF /* RssReader.xcdatamodeld */,
+				1DBBEF1816660B5D003679DF /* Supporting Files */,
+			);
+			path = RssReader;
+			sourceTree = "<group>";
+		};
+		1DBBEF1816660B5D003679DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEF1916660B5D003679DF /* RssReader-Info.plist */,
+				1DBBEF1A16660B5D003679DF /* InfoPlist.strings */,
+				1DBBEF1D16660B5D003679DF /* main.m */,
+				1DBBEF1F16660B5D003679DF /* RssReader-Prefix.pch */,
+				1DBBEF2316660B5D003679DF /* Default.png */,
+				1DBBEF2516660B5D003679DF /* Default@2x.png */,
+				1DBBEF2716660B5D003679DF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DBBEF0A16660B5D003679DF /* RssReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBBEF4016660B5D003679DF /* Build configuration list for PBXNativeTarget "RssReader" */;
+			buildPhases = (
+				1DBBEF0716660B5D003679DF /* Sources */,
+				1DBBEF0816660B5D003679DF /* Frameworks */,
+				1DBBEF0916660B5D003679DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RssReader;
+			productName = RssReader;
+			productReference = 1DBBEF0B16660B5D003679DF /* RssReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DBBEF0216660B5D003679DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Francesco De Simone";
+			};
+			buildConfigurationList = 1DBBEF0516660B5D003679DF /* Build configuration list for PBXProject "RssReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1DBBEF0016660B5D003679DF;
+			productRefGroup = 1DBBEF0C16660B5D003679DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DBBEF0A16660B5D003679DF /* RssReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DBBEF0916660B5D003679DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBBEF1C16660B5D003679DF /* InfoPlist.strings in Resources */,
+				1DBBEF2416660B5D003679DF /* Default.png in Resources */,
+				1DBBEF2616660B5D003679DF /* Default@2x.png in Resources */,
+				1DBBEF2816660B5D003679DF /* Default-568h@2x.png in Resources */,
+				1DBBEF3416660B5D003679DF /* MasterViewController_iPhone.xib in Resources */,
+				1DBBEF3716660B5D003679DF /* MasterViewController_iPad.xib in Resources */,
+				1DBBEF3A16660B5D003679DF /* DetailViewController_iPhone.xib in Resources */,
+				1DBBEF3D16660B5D003679DF /* DetailViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DBBEF0716660B5D003679DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBBEF1E16660B5D003679DF /* main.m in Sources */,
+				1DBBEF2216660B5D003679DF /* AppDelegate.m in Sources */,
+				1DBBEF2B16660B5D003679DF /* RssReader.xcdatamodeld in Sources */,
+				1DBBEF2E16660B5D003679DF /* MasterViewController.m in Sources */,
+				1DBBEF3116660B5D003679DF /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DBBEF1A16660B5D003679DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBBEF1B16660B5D003679DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DBBEF3216660B5D003679DF /* MasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBBEF3316660B5D003679DF /* en */,
+			);
+			name = MasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1DBBEF3516660B5D003679DF /* MasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBBEF3616660B5D003679DF /* en */,
+			);
+			name = MasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		1DBBEF3816660B5D003679DF /* DetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBBEF3916660B5D003679DF /* en */,
+			);
+			name = DetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1DBBEF3B16660B5D003679DF /* DetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBBEF3C16660B5D003679DF /* en */,
+			);
+			name = DetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBBEF3E16660B5D003679DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DBBEF3F16660B5D003679DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DBBEF4116660B5D003679DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RssReader/RssReader-Prefix.pch";
+				INFOPLIST_FILE = "RssReader/RssReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1DBBEF4216660B5D003679DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RssReader/RssReader-Prefix.pch";
+				INFOPLIST_FILE = "RssReader/RssReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBBEF0516660B5D003679DF /* Build configuration list for PBXProject "RssReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBBEF3E16660B5D003679DF /* Debug */,
+				1DBBEF3F16660B5D003679DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBBEF4016660B5D003679DF /* Build configuration list for PBXNativeTarget "RssReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBBEF4116660B5D003679DF /* Debug */,
+				1DBBEF4216660B5D003679DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DBBEF2916660B5D003679DF /* RssReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1DBBEF2A16660B5D003679DF /* RssReader.xcdatamodel */,
+			);
+			currentVersion = 1DBBEF2A16660B5D003679DF /* RssReader.xcdatamodel */;
+			path = RssReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1DBBEF0216660B5D003679DF /* Project object */;
+}
