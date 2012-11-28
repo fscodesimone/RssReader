@@ -12,7 +12,29 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate,NSXMLParserDelegate>{
+    
+
+    IBOutlet UITableView * newsTable;
+	NSXMLParser * rssParser;
+	NSMutableArray * rssEntries;
+    NSMutableArray * filteredRssEntries;
+	NSMutableDictionary * item;
+	NSString * currentElement;
+	NSMutableString * currentTitle, * currentDate, * currentSummary, * currentLink;
+    NSData *currentImage;
+    UITextField *myTextField;
+	
+@private
+    NSFetchedResultsController *fetchedResultsController_;
+    NSManagedObjectContext *managedObjectContext_;
+
+    
+    
+}
+
+- (void)parseXMLFileAtURL:(NSString *)URL;
+
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 

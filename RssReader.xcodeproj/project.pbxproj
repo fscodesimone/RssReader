@@ -21,9 +21,10 @@
 		1DBBEF2E16660B5D003679DF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF2D16660B5D003679DF /* MasterViewController.m */; };
 		1DBBEF3116660B5D003679DF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3016660B5D003679DF /* DetailViewController.m */; };
 		1DBBEF3416660B5D003679DF /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3216660B5D003679DF /* MasterViewController_iPhone.xib */; };
-		1DBBEF3716660B5D003679DF /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3516660B5D003679DF /* MasterViewController_iPad.xib */; };
 		1DBBEF3A16660B5D003679DF /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3816660B5D003679DF /* DetailViewController_iPhone.xib */; };
-		1DBBEF3D16660B5D003679DF /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF3B16660B5D003679DF /* DetailViewController_iPad.xib */; };
+		1DBBEF4F16666F1D003679DF /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF4E16666F1D003679DF /* Rss.m */; };
+		1DBBEF5D16668077003679DF /* no_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF5C16668077003679DF /* no_img.png */; };
+		1DBBEF601666860B003679DF /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF5F1666860B003679DF /* Config.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +48,12 @@
 		1DBBEF2F16660B5D003679DF /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		1DBBEF3016660B5D003679DF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1DBBEF3316660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
-		1DBBEF3616660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		1DBBEF3916660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
-		1DBBEF3C16660B5D003679DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		1DBBEF4D16666F1D003679DF /* Rss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rss.h; sourceTree = "<group>"; };
+		1DBBEF4E16666F1D003679DF /* Rss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rss.m; sourceTree = "<group>"; };
+		1DBBEF5C16668077003679DF /* no_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_img.png; sourceTree = "<group>"; };
+		1DBBEF5E1666860B003679DF /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		1DBBEF5F1666860B003679DF /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 				1DBBEF2F16660B5D003679DF /* DetailViewController.h */,
 				1DBBEF3016660B5D003679DF /* DetailViewController.m */,
 				1DBBEF3216660B5D003679DF /* MasterViewController_iPhone.xib */,
-				1DBBEF3516660B5D003679DF /* MasterViewController_iPad.xib */,
 				1DBBEF3816660B5D003679DF /* DetailViewController_iPhone.xib */,
-				1DBBEF3B16660B5D003679DF /* DetailViewController_iPad.xib */,
 				1DBBEF2916660B5D003679DF /* RssReader.xcdatamodeld */,
+				1DBBEF5E1666860B003679DF /* Config.h */,
+				1DBBEF5F1666860B003679DF /* Config.m */,
+				1DBBEF4D16666F1D003679DF /* Rss.h */,
+				1DBBEF4E16666F1D003679DF /* Rss.m */,
 				1DBBEF1816660B5D003679DF /* Supporting Files */,
 			);
 			path = RssReader;
@@ -117,6 +123,7 @@
 		1DBBEF1816660B5D003679DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DBBEF5C16668077003679DF /* no_img.png */,
 				1DBBEF1916660B5D003679DF /* RssReader-Info.plist */,
 				1DBBEF1A16660B5D003679DF /* InfoPlist.strings */,
 				1DBBEF1D16660B5D003679DF /* main.m */,
@@ -184,9 +191,8 @@
 				1DBBEF2616660B5D003679DF /* Default@2x.png in Resources */,
 				1DBBEF2816660B5D003679DF /* Default-568h@2x.png in Resources */,
 				1DBBEF3416660B5D003679DF /* MasterViewController_iPhone.xib in Resources */,
-				1DBBEF3716660B5D003679DF /* MasterViewController_iPad.xib in Resources */,
 				1DBBEF3A16660B5D003679DF /* DetailViewController_iPhone.xib in Resources */,
-				1DBBEF3D16660B5D003679DF /* DetailViewController_iPad.xib in Resources */,
+				1DBBEF5D16668077003679DF /* no_img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +208,8 @@
 				1DBBEF2B16660B5D003679DF /* RssReader.xcdatamodeld in Sources */,
 				1DBBEF2E16660B5D003679DF /* MasterViewController.m in Sources */,
 				1DBBEF3116660B5D003679DF /* DetailViewController.m in Sources */,
+				1DBBEF4F16666F1D003679DF /* Rss.m in Sources */,
+				1DBBEF601666860B003679DF /* Config.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,28 +232,12 @@
 			name = MasterViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		1DBBEF3516660B5D003679DF /* MasterViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DBBEF3616660B5D003679DF /* en */,
-			);
-			name = MasterViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 		1DBBEF3816660B5D003679DF /* DetailViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1DBBEF3916660B5D003679DF /* en */,
 			);
 			name = DetailViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		1DBBEF3B16660B5D003679DF /* DetailViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DBBEF3C16660B5D003679DF /* en */,
-			);
-			name = DetailViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -309,7 +301,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RssReader/RssReader-Prefix.pch";
 				INFOPLIST_FILE = "RssReader/RssReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -320,7 +314,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RssReader/RssReader-Prefix.pch";
 				INFOPLIST_FILE = "RssReader/RssReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -344,6 +340,7 @@
 				1DBBEF4216660B5D003679DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

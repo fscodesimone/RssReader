@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Rss.h"
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>{
+    
+    Rss *rss;
+}
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Rss  *rss;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titoloLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+
+- (IBAction)openInSafari:(id)sender;
 @end
