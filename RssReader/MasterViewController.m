@@ -33,13 +33,13 @@
 - (void)viewDidLoad {
     
 	[super viewDidLoad];
-    
+ 
     UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStyleBordered target:self action:@selector(changeUrl)];
     self.navigationItem.leftBarButtonItem = settingsButton;
     
 
     
-    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reload)];
+    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadActions)];
     self.navigationItem.rightBarButtonItem = reloadButton;
     
     filteredRssEntries = [[NSMutableArray alloc ] initWithCapacity:[[self.fetchedResultsController fetchedObjects]count] ];
@@ -90,9 +90,27 @@
 }
 
 
+
+-(void)reloadActions{
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    HUD.labelText = @"Loading";
+    HUD.mode = MBProgressHUDModeIndeterminate;
+    [self.navigationController.view addSubview:HUD];
+ 
+    [HUD showWhileExecuting:@selector(reloadOnMainThread) onTarget:self withObject:nil animated:YES];
+}
+
+-(void) reloadOnMainThread{
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    HUD.labelText = @"Loading";
+    HUD.mode = MBProgressHUDModeIndeterminate;
+    [self.navigationController.view addSubview:HUD];
+    [self performSelectorOnMainThread:@selector(reload) withObject:nil waitUntilDone:NO];
+}
+
 //reload objects from url
 -(void) reload{
-    
+   
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSFetchRequest * config = [[NSFetchRequest alloc] init];
     [config setEntity:[NSEntityDescription entityForName:@"Config" inManagedObjectContext:context]];
@@ -279,6 +297,8 @@
 
 	NSLog(@"all done!");
 	NSLog(@"rss array has %d items", [rssEntries count]);
+    
+    [HUD hide:YES];
     
 	[self insertNewObject];
     

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MBProgressHUD.h"
 @class DetailViewController;
 
 #import <CoreData/CoreData.h>
@@ -24,6 +24,7 @@
 	NSMutableString * currentTitle, * currentDate, * currentSummary, * currentLink;
     NSData *currentImage;
     UITextField *myTextField;
+    MBProgressHUD *HUD;
 	
 @private
     NSFetchedResultsController *fetchedResultsController_;

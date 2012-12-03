@@ -25,6 +25,7 @@
 		1DBBEF4F16666F1D003679DF /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF4E16666F1D003679DF /* Rss.m */; };
 		1DBBEF5D16668077003679DF /* no_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBEF5C16668077003679DF /* no_img.png */; };
 		1DBBEF601666860B003679DF /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEF5F1666860B003679DF /* Config.m */; };
+		1DBE0791166CECC0004AB5DA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE0790166CECC0004AB5DA /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		1DBBEF5C16668077003679DF /* no_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_img.png; sourceTree = "<group>"; };
 		1DBBEF5E1666860B003679DF /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		1DBBEF5F1666860B003679DF /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		1DBE078F166CECC0004AB5DA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1DBE0790166CECC0004AB5DA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		1DBBEF1816660B5D003679DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DBE078F166CECC0004AB5DA /* MBProgressHUD.h */,
+				1DBE0790166CECC0004AB5DA /* MBProgressHUD.m */,
 				1DBBEF5C16668077003679DF /* no_img.png */,
 				1DBBEF1916660B5D003679DF /* RssReader-Info.plist */,
 				1DBBEF1A16660B5D003679DF /* InfoPlist.strings */,
@@ -210,6 +215,7 @@
 				1DBBEF3116660B5D003679DF /* DetailViewController.m in Sources */,
 				1DBBEF4F16666F1D003679DF /* Rss.m in Sources */,
 				1DBBEF601666860B003679DF /* Config.m in Sources */,
+				1DBE0791166CECC0004AB5DA /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
